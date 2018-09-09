@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Readers GUIDE</string>
+    <string name="searchLabel">Search libraries</string>
+
+    <string name="welcome">Welcome.</string>
+
+    <string name="bookAdd">Today\'s Book selection:</string>
+
+    <string name="newsAdd">Today\'s News selection:</string>
+
+
+    <string name="button">SEARCH</string>
+
+    <string name="noFeedback">No feedback</string>
+
+    <string name="sWelcome">You can search desire books or news.</string>
+    <string name="edit">Enter the fraze</string>
+    <string name="results">Results</string>
+
+</resources>

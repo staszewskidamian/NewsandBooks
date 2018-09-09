@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:padding="@dimen/eight"
+            android:text="@string/sWelcome"
+            android:textSize="@dimen/textSize" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/search_img" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/eight"
+            android:orientation="horizontal"
+            android:padding="@dimen/four">
+
+            <SearchView
+                android:id="@+id/edit_fraze"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/eight"
+                android:queryHint="Please enter the key word."
+                android:iconifiedByDefault="false"/>
+
+
+
+        </LinearLayout>
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/booksRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="in books"
+                android:textSize="@dimen/textSize" />
+
+            <RadioButton
+                android:id="@+id/newsRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="in news"
+                android:textSize="@dimen/textSize" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/eight"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/scienceRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="in science"
+                android:textSize="@dimen/textSize"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/styleRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sixten"
+                android:layout_marginRight="@dimen/sixten"
+                android:text="in style"
+                android:textSize="@dimen/textSize"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/politicsRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="in politics"
+                android:textSize="@dimen/textSize"
+                android:visibility="gone" />
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/eight"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/authorRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="by author"
+                android:textSize="@dimen/textSize"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/titleRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="by title"
+                android:textSize="@dimen/textSize"
+                android:visibility="gone" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:text="Chose number of items in feedback"
+            android:textSize="@dimen/textSize"
+            android:visibility="gone" />
+
+        <RadioGroup
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/eight"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/oneO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="10"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/twoO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="20"
+                android:visibility="gone" />
+
+
+            <RadioButton
+                android:id="@+id/threeO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="30"
+                android:visibility="gone" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/execute_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/sixten"
+            android:background="@color/blue"
+            android:paddingLeft="66dp"
+            android:paddingRight="66dp"
+            android:text="execute search"
+            android:textSize="@dimen/textSize" />
+
+
+    </LinearLayout>
+
+</ScrollView>
